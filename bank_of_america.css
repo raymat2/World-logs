@@ -1,4 +1,9 @@
-/* Styles for the account table */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Match background color */
+    color: #333;
+    background-image: url(https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
 .account-table-section {
     padding: 20px;
     background: #1c1c1c;
@@ -38,4 +43,33 @@
 
 .btn.buy:hover {
     background-color: #45a049;
+}
+
+/* Header Styles */
+.header {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+    height: 150px;
+    margin-right:50px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
