@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Match background color */
+    color: #333;
+    background-image: url(https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+
+.deposit-container {
+    max-width: 600px;
+    margin: 40px auto; /* Center the container */
+    padding: 20px;
+    background-color: white; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.deposit-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF; /* Same color as the balance section */
+}
+
+.deposit-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.deposit-container label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block; /* Make labels block elements */
+}
+
+.deposit-container input[type="number"],
+.deposit-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.deposit-container button {
+    width: 100%;
+    background-color: #007BFF;
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.deposit-container button:hover {
+    background-color: #0056b3;
+}
+
+.header {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+    height: 150px;
+    margin-right:50px;
+}
+
+.hidden {
+    display: none;
+}

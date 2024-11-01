@@ -1,0 +1,41 @@
+/* Styles for the account table */
+.account-table-section {
+    padding: 20px;
+    background: #1c1c1c;
+}
+
+.account-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    min-width: 600px;
+    color: white;
+}
+
+.account-table th, .account-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.account-table th {
+    background-color: #2a2a2a;
+}
+
+.account-table tr:hover {
+    background-color: #3a3a3a;
+}
+
+.btn.buy {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.buy:hover {
+    background-color: #45a049;
+}

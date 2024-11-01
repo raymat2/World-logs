@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="body">
+
+<!-- Header -->
+<header class="header">
+    <div class="logo">
+        <img src="https://world-logs.com/assets/img/worldlogo.png" alt="World-Logs Logo"> <!-- Add your logo here -->
+        <span>Dashboard</span>
+    </div>
+    <div class="user-menu">
+        <span></span> <!-- User Dropdown (can add functionality if needed) -->
+    </div>
+</header>
+
+<!-- Balance Section -->
+<section class="balance-section">
+    <div class="balance-info">
+        <p>YOUR BALANCE</p>
+        <h1>$0</h1>
+    </div>
+    <div class="balance-buttons">
+        <button id="addBalanceBtn">ADD BALANCE</button>
+        <button class="btn history">HISTORY</button>
+    </div>
+
+<!-- Product Cards -->
+<main class="product-cards">
+    <div class="card">
+        <img src="https://world-logs.com/assets/img/boa.gif" alt="Bank Of America"> <!-- Replace with actual image sources -->
+        <p>Bank Of America</p>
+        <button class="btn view">VIEW</button>
+    </div>
+    <div class="card">
+        <img src="https://world-logs.com/assets/img/suntrust.gif" alt="Suntrust Bank">
+        <p>Suntrust Bank</p>
+        <button class="btn view">OUT OF STOCK</button>
+    </div>
+    <div class="card">
+        <img src="https://world-logs.com/assets/img/chase.gif" alt="Chase Bank">
+        <p>Chase Bank</p>
+        <button class="btn view">OUT OF STOCK</button>
+    </div>
+    <div class="card">
+        <img src="https://world-logs.com/assets/img/chime.gif" alt="Chime Bank">
+        <p>Chime Bank</p>
+        <button class="btn view">OUT OF STOCK</button>
+    </div>
+</main>
+
+<!-- Inline Script for Testing -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const addBalanceBtn = document.getElementById("addBalanceBtn");
+
+    addBalanceBtn.addEventListener("click", function () {
+        window.location.href = "/make-deposit.html"; // Ensure this path is correct
+    });
+});
+
+// Ensure the DOM content is loaded before adding event listeners
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all buttons with class 'view'
+    const viewButtons = document.querySelectorAll(".btn.view");
+
+    // Loop through each button and add click event listener
+    viewButtons.forEach(button => {
+        // Check if the button's parent element contains the specific "Bank Of America" text
+        const bankName = button.parentElement.querySelector("p").textContent.trim();
+        
+        if (bankName === "Bank Of America") {
+            button.addEventListener("click", function() {
+                window.location.href = "/bank_of_america.html";
+            });
+        }
+    });
+});
+
+
+</script>
+
+<!-- Chat Widget Script -->
+<script src="https://embed.tawk.to/_s/v4/app/67183cd0c15/languages/en.js"></script>
+
+</body>
+</html>
+
+

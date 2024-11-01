@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Payment</title>
+    <link rel="stylesheet" href="bitcoin-payment.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="logo">
+        <img src="https://world-logs.com/assets/img/worldlogo.png" alt="World-Logs Logo">
+    </div>
+    <div class="user-menu">
+        <span></span>
+    </div>
+</header>
+
+<div class="bitcoin-container">
+    <h2>Bitcoin Payment (BTC SegWit)</h2>
+    <p><strong>Wallet Address:</strong> <span id="btcAddress">bc1qpef6p8x4fhups232vrknjc7nwmsv9u5nvlyf0z</span></p>
+    <button id="copyAddressBtn">Copy Wallet Address</button>
+
+    <div class="attention-box">
+        <p><strong>Attention!!!</strong></p>
+        <p>Copy the Bitcoin wallet address and make the payment of <strong id="paymentAmount">$550.00</strong> to the above wallet address. Then come back and confirm your transaction.</p>
+    </div>
+    
+    <button id="confirmTransactionBtn">Confirm Transaction</button>
+</div>
+
+<script>
+    // Get the amount from the URL
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const amount = urlParams.get('amount') || "550.00"; // Default to 550.00 if no amount is provided
+        document.getElementById("paymentAmount").textContent = `$${amount}`;
+    });
+
+    // Copy Bitcoin address to clipboard
+    document.getElementById("copyAddressBtn").addEventListener("click", function () {
+        const btcAddress = document.getElementById("btcAddress").textContent;
+        navigator.clipboard.writeText(btcAddress)
+            .then(() => alert("Bitcoin address copied to clipboard!"))
+            .catch(err => console.error("Failed to copy the address:", err));
+    });
+
+    // Confirm Transaction button placeholder
+    document.getElementById("confirmTransactionBtn").addEventListener("click", function () {
+        alert("Transaction confirmation is under development.");
+    });
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Deposit</title>
+    <link rel="stylesheet" href="make-deposit.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="logo">
+        <img src="https://world-logs.com/assets/img/worldlogo.png" alt="World-Logs Logo"> <!-- Add your logo here -->
+    </div>
+    <div class="user-menu">
+        <span></span> <!-- User Dropdown (can add functionality if needed) -->
+    </div>
+</header>
+
+<div class="deposit-container">
+    <h2>Make Deposit</h2>
+    <div>
+        <p>Min: $550.00</p>
+        <p>Max: $5,000.00</p>
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount" required>
+        
+        <label for="paymentMethod">Pay with</label>
+        <select id="paymentMethod" required>
+            <option value="">Choose Payment method</option>
+        </select>
+        
+        <button id="payBtn">PAY</button>
+    </div>
+</div>
+
+<script src="make-deposit.js"></script>
+
+</body>
+</html>
+
+
+

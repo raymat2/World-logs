@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+
+.usdt-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.usdt-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#usdtAddress {
+    font-size: 1.1em;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+#copyAddressBtn,
+#confirmTransactionBtn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+#copyAddressBtn:hover,
+#confirmTransactionBtn:hover {
+    background-color: #0056b3;
+}
+
+.attention-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffeded;
+    color: #d9534f;
+    border-radius: 5px;
+}
+
+/* Header Styles */
+.header {
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px; /* Add padding to center the content nicely */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixes the header to the top of the page */
+    top: 0;          /* Positions it at the top */
+    left: 0;
+    width: 100%;     /* Makes it span the full width of the page */
+    z-index: 1000;   /* Ensures it stays above other content */
+}
+
+.header .logo img {
+    height: 150px;
+    margin-right: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add padding to the top of the main content so it's not hidden under the header */
+body {
+    padding-top: 100px; /* Adjust this based on the header height */
+}
